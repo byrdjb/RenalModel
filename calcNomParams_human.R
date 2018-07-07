@@ -5,6 +5,27 @@ calcNomParams <- function(){
 #Parameters of normal human physiology based on literature and commmon medical knowledge
 ########################################################################################
 
+
+#Constants and Unit conversions
+nL_mL=1e+06
+dl_ml=0.01
+L_dL=10
+L_mL=1000
+L_m3=0.001
+g_mg=0.001
+ng_mg=1e-06
+secs_mins=60
+min_hr=60
+hr_day=24
+min_day=1440
+MW_creatinine=113.12
+Pi=3.1416
+pi=3.14
+viscosity_length_constant=1.5e-09 
+gamma =  1.16667e-5;  #  viscosity of tubular fluid
+mmHg_Nperm2_conv = 133.32
+
+
 ####Systemic parameters
 nominal_map_setpoint=93  		#mmHg
 CO_nom= 5					#L/min
@@ -289,26 +310,6 @@ max_cd_reabs_rate = 0.995
 pressure_natriuresis_CD_scale = 3
 pressure_natriuresis_CD_slope=1
 
-
-
-#Constants and Unit conversions
-nL_mL=1e+06
-dl_ml=0.01
-L_dL=10
-L_mL=1000
-L_m3=0.001
-g_mg=0.001
-ng_mg=1e-06
-secs_mins=60
-min_hr=60
-hr_day=24
-min_day=1440
-MW_creatinine=113.12
-Pi=3.1416
-pi=3.14
-viscosity_length_constant=1.5e-09 
-gamma =  1.16667e-5;  #  viscosity of tubular fluid
-mmHg_Nperm2_conv = 133.32
 
 
 #Scaling parameters - can be used to parameterize model for other species
